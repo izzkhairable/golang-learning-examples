@@ -1,3 +1,3 @@
-module lucky-number.alexedwards.net
+module example.hello
 
 go 1.21.5
