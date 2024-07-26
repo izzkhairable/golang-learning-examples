@@ -30,8 +30,9 @@ func ReverseInPlace(list []int, start, end int) {
 }
 
 func ReverseInPlacePractice(list []int, start int, end int) {
-	for i := start; i <= start+end/2; i++ {
+	for i := start; i <= start+end/2 && i < end-i+start; i++ {
 		//frontInt := list[i]
 		//backInt := list[i-2]
+		list[i], list[end-i+start] = list[end-i+start], list[i]
 	}
 }

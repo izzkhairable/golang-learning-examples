@@ -29,8 +29,15 @@ func TestReverseInPlace(t *testing.T) {
 		{[]int{1, 2, 3, 4, 5, 6}, 0, 3, []int{4, 3, 2, 1, 5, 6}},
 	}
 
+	//for i, test := range tests {
+	//	ReverseInPlace(test.list, test.start, test.end)
+	//	if !slices.Equal(test.list, test.reversed) {
+	//		t.Fatalf("Failed test case #%d. Want %#v got %#v", i, test.reversed, test.list)
+	//	}
+	//}
+
 	for i, test := range tests {
-		ReverseInPlace(test.list, test.start, test.end)
+		ReverseInPlacePractice(test.list, test.start, test.end)
 		if !slices.Equal(test.list, test.reversed) {
 			t.Fatalf("Failed test case #%d. Want %#v got %#v", i, test.reversed, test.list)
 		}
