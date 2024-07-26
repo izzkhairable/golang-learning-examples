@@ -1,13 +1,8 @@
 package main
 
 func main() {
-	tests := []struct {
-		list     []int
-		start    int
-		end      int
-		reversed []int
-	}{
-		{[]int{1, 2, 3, 4, 5, 6}, 0, 3, []int{4, 3, 2, 1, 5, 6}},
-	}
-	ReverseInPlace(tests[0].list, tests[0].start, tests[0].end)
+	ReverseInPlace([]int{1, 2, 3, 4, 5, 6}, 0, 5)
+	ReverseInPlace([]int{1, 2, 3, 4, 5, 6}, 2, 5)
+	ReverseInPlace([]int{5, 6, 7, 8, 9, 10}, 2, 5)
+	ReverseInPlace([]int{5, 6, 7, 8, 9, 10, 11, 12, 13, 14}, 2, 5)
 }
